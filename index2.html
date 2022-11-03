@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>KGPmeals</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <span><a href="#"><img class="logoimg" src="images/logo.png" alt=""></a></span>
+    <label class="logo">KGPmeals</label>
+    <ul>
+      <li><a href="#">
+          <div class="dropdown">
+            <a class="drop-btn" href="#"><span class="material-symbols-outlined">
+                filter_alt</span>
+            </a>
+            <div class="dropdown-content">
+              <form action="mailto:ujjawalrr@gmail.com" method="post" enctype=text/plain>
+                <p>Type <input type="radio" name="type" id="veg" value="Male">Veg
+                    <input type="radio" name="type" id="nonVeg" value="Non Veg">Non Veg
+                    <input type="radio" name="type" id="both" value="Both">Both
+                </p>
+                <p>
+                    <select name="Contact On" id="Contact_On">
+                        <option value="">--Sort by--</option>
+                        <option value="priceHL">Price(High to Low)</option>
+                        <option value="priceLH">Price(Low to High)</option>
+                        <option value="relevance">Relevance</option>
+                        <option value="rating">Rating(High to Low)</option>
+                        <option value="deliveryTime">Delivery Time</option>
+                    </select>
+                </p>
+                <p><i class="fa fa-search" aria-hidden="true"></i><input type="text" name="name" placeholder="Search by Name Location"></p>
+            </form>
+            </div>
+          </div>
+        </a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

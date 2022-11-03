@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="banner">
+        <div class="imgBx">
+            <img src="https://gyws.org/gyws/assets/img/new_website_img/img/humming.jpg" class="active">
+            <img src="https://gyws.org/gyws/assets/img/new_website_img/img/MHRD.jpg">
+            <img
+                src="https://www.ndtv.com/education/cache-static/media/presets/625X400/article_images/2020/5/12/llvlorh_iit-kharagpur-website_625x300_03_August_18.webp">
+        </div>
+        <div class="contentBx">
+            <div class="active">
+                <h2>Hummingbird News</h2>
+                <h4>8 September,2020</h4>
+                <p>
+                    The online workshop was conducted in collaboration with Ek Tara- a registered trust in Kolkata, free
+                    of cost for the teachers of class LKG-5.As many as 75 teachers from 19 different schools spread
+                    across the cities of Chennai, Pallakad, Raipur, Wardha, Gwalior, Samvedana and Kharagpur enrolled
+                    for the workshop.....
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <h2>Former MHRD Minister (Dr. Ramesh Pokhriyal)</h2>
+                <h4>21 May, 2020</h4>
+                <p>
+                    IIT Kgp students are helping the poor in villages around their campus by providing them with
+                    essential goods, like food, hand sanitisers, masks, etc. while maintaining social distancing.....
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <h2>NDTV</h2>
+                <h4>5 May,2020</h4>
+                <p>
+                    The online workshop was conducted in collaboration with Ek Tara- a registered trust in Kolkata, free
+                    of cost for the teachers of class LKG-5.As many as 75 teachers from 19 different schools spread
+                    across the cities of Chennai, Pallakad, Raipur, Wardha, Gwalior, Samvedana and Kharagpur enrolled
+                    for the workshop.....
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <ul class="controls">
+            <li onclick="PrevSlide(); PrevSlideText();"></li>
+            <li onclick="NextSlide(); NextSlideText();"></li>
+        </ul>
+    </section>
+    <script>
+        const imgBx = document.querySelector('.imgBx');
+        const slides = imgBx.getElementsByTagName('img');
+        var i = 0;
+        function NextSlide() {
+            slides[i].classList.remove('active');
+            i = (i + 1) % slides.length;
+            slides[i].classList.add('active');
+        }
+        function PrevSlide() {
+            slides[i].classList.remove('active');
+            i = (i - 1 + slides.length) % slides.length;
+            slides[i].classList.add('active');
+        }
+
+
+        const contentBx = document.querySelector('.contentBx');
+        const slidesText = contentBx.getElementsByTagName('div');
+        var j = 0;
+        function NextSlideText() {
+            slidesText[j].classList.remove('active');
+            j = (j + 1) % slidesText.length;
+            slidesText[j].classList.add('active');
+        }
+        function PrevSlideText() {
+            slidesText[j].classList.remove('active');
+            j = (j - 1 + slidesText.length) % slidesText.length;
+            slidesText[j].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
